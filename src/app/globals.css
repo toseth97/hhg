@@ -2,32 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+  --line: rgb(221, 221, 221);
+  --main__color: #BF0A30;
+  --main__text: white;
+  --default__text: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*{
+  font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* CONSTANT COLOR COMBINATION PRESET */
+
+.primary__bg{
+  background-color: var(--main__color);
+}
+.primary__bg__text{
+  color: var(--main__text)
+}
+.primary__text{
+  color: var(--main__color)
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+
+/* SOCIAL TOP (SOCIAL LINK FOR W-SCREEN) */
+
+.social__top{
+  height: 50px;
+}
+
+.social__link{
+  border-left: 1px solid var(--line) ;
+  transition: .3s ease-in-out;
+}
+.social__link:last-child{
+  border-right: 1px solid var(--line) ;
+}
+
+/* FACEBOOK HOVER */
+.social__link:first-child:hover{
+  color: blue;
+}
+
+.social__link:nth-child(2):hover{
+  color: rgb(250, 125, 146);
+}
+.social__link:hover{
+  color: var(--main__color);
+}
+
+nav{
+  height: 80px;
+  background-color: var(--main__color);
+}
+
+.nav__link{
+  position: relative;
+}
+.line{
+  width: 100%;
+  height: 5px ;
+  background-color: white;
+  border-radius: 10%;
+  position: absolute;
+  bottom:-10px;
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+.nav__link:hover .line{
+  opacity: 1;
+  bottom: 0px;
 }

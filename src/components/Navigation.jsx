@@ -67,7 +67,7 @@ const Navigation = () => {
             </nav>
             {isMobile && (
                 <div className="block w-full ">
-                    <ul className="flex gap-4 font-bold uppercase flex-col">
+                    <ul className="flex gap-4 font-bold uppercase flex-col text-sm">
                         <Link
                             href="/"
                             className="nav__link  py-4 border-b flex items-center justify-center"

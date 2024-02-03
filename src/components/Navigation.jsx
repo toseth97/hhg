@@ -20,35 +20,35 @@ const Navigation = () => {
                 <ul className="lg:flex hidden gap-4 font-bold primary__bg__text w-5/12 h-full">
                     <Link
                         href="/"
-                        className="nav__link w-2/12 h-full flex items-center justify-center"
+                        className="nav__link w-2/12 h-full flex items-center justify-center overflow-y-hidden"
                     >
                         <li>Home</li>
                         <div className="line"></div>
                     </Link>
                     <Link
                         href="/"
-                        className="nav__link w-2/12 h-full flex items-center justify-center"
+                        className="nav__link w-2/12 h-full flex items-center justify-center overflow-y-hidden"
                     >
                         <li>About</li>
                         <div className="line"></div>
                     </Link>
                     <Link
                         href="/"
-                        className="nav__link w-2/12 h-full flex items-center justify-center"
+                        className="nav__link w-2/12 h-full flex items-center justify-center overflow-y-hidden"
                     >
                         <li>Blog</li>
                         <div className="line"></div>
                     </Link>
                     <Link
                         href="/"
-                        className="nav__link w-2/12 h-full flex items-center justify-center"
+                        className="nav__link w-2/12 h-full flex items-center justify-center overflow-y-hidden"
                     >
                         <li>Contact Us</li>
                         <div className="line"></div>
                     </Link>
                     <Link
                         href="/"
-                        className="nav__link w-2/12 h-full flex items-center justify-center"
+                        className="nav__link w-2/12 h-full flex items-center justify-center overflow-y-hidden"
                     >
                         <li>Donate</li>
                         <div className="line"></div>

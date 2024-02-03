@@ -6,6 +6,10 @@ const nextConfig = {
                 protocol: "https",
                 hostname: "elementor.zozothemes.com",
             },
+            {
+                protocol: "https",
+                hostname: "images.unsplash.com",
+            },
         ],
     },
 };

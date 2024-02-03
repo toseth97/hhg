@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
                     <SocialLinks />
                     <Navigation />
                 </header>
-                {children}
+                <main className="flex flex-col items-center justify-center w-full">
+                    {children}
+                </main>
             </body>
         </html>
     );
